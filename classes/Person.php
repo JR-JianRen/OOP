@@ -13,7 +13,6 @@ class Person
     // Construct methode
     function __construct(string $name, int $age, string $gender)
     {
-
         $this->name = $name;
 
         $this->age = $age;
@@ -23,6 +22,9 @@ class Person
         echo "A new Person-object has been created.";
 
         echo "The property name of this object is: $name";
+    }
 
+    public function setGender(string $gender) {
+        $this->gender = $gender;
     }
 }
